@@ -1,15 +1,36 @@
 <!DOCTYPE html>
+#CBBD93
 <html>
   <head>
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-assets>
+        <img id="sky1" src="assets/equirectangular.jpg">
+        <img id="sand" src="assets/sand.jpg">
+        <img id="cone" src="assets/cone.jpg">
+      </a-assets>
+      <!--Sand Castle-->
+        <a-box src="#sand" color="#CBBD93" depth="2" height="1" width="0.5" position="1 0.5 0"></a-box>
+        <a-box src="#sand" color="#CBBD93" depth="2" height="1" width="0.5" position="-1 0.5 0"></a-box>
+        <a-box src="#sand" color="#CBBD93" depth="2" height="1" width="0.5" position="0 0.5 1" rotation="0 90 0"></a-box>
+        <a-box src="#sand" color="#CBBD93" depth="2" height="1" width="0.5" position="0 0.5 -1" rotation="0 90 0"></a-box>
+        <a-cylinder src="#sand" position="1 0.75 -1" radius="0.3" height="1.5" color="#CBBD93"></a-cylinder>
+        <a-cylinder src="#sand" position="1 0.75 1" radius="0.3" height="1.5" color="#CBBD93"></a-cylinder>
+        <a-cylinder src="#sand" position="-1 0.75 -1" radius="0.3" height="1.5" color="#CBBD93"></a-cylinder>
+        <a-cylinder src="#sand" position="-1 0.75 1" radius="0.3" height="1.5" color="#CBBD93"></a-cylinder>
+        <a-cone src="#sand" position="1 2 1" color="#CBBD93" radius-bottom=".5"></a-cone>
+        <a-cone src="#sand" position="1 2 -1" color="#CBBD93" radius-bottom=".5"></a-cone>
+        <a-cone src="#sand" position="-1 2 1" color="#CBBD93" radius-bottom=".5"></a-cone>
+        <a-cone src="#sand" position="-1 2 -1" color="#CBBD93" radius-bottom=".5"></a-cone>
+      <!--End Sand Castle-->
+
+      <!--Ice Cream Cone-->
+        <a-cone src="#cone" side="double" position="3 0 3" height="-1" radius-bottom=".3"></a-cone>
+        <a-sphere position="3 .75 3" radius=".4" color="pink"></a-sphere>
+      <!--End Ice Cream Cone-->
+      <a-sky src="#sky1" radius="30"></a-sky>
     </a-scene>
   </body>
 </html>
