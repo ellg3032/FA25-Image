@@ -10,23 +10,80 @@
           id="pokeball"
           src="assets/Part Studio 1 - Part 1.obj"
         ></a-asset-item>
+
         <a-asset-item
           id="pokeballmtl"
           src="assets/Part Studio 1 - Part 1.mtl"
         ></a-asset-item>
+
         <a-asset-item
           id="charmander"
           src="assets/charmander.obj"
         ></a-asset-item>
+
+        <a-asset-item
+          id="table"
+          src="assets/Part Studio 1 - table.obj"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="tablemtl"
+          src="assets/Part Studio 1 - table.mtl"
+        ></a-asset-item>
+
+        <a-asset-item id="bulbasaur" src="assets/bulbasaur.obj"></a-asset-item>
+
+        <a-asset-item
+          id="squirtle"
+          src="assets/squirtle - squirtle.obj"
+        ></a-asset-item>
+
+        <img id="sky1" src="assets/black.jpg" />
+
+        <a-asset-item
+          id="wordwall"
+          src="assets/Word_Wall_fixed.obj"
+        ></a-asset-item>
+
+        <a-asset-item id="sword" src="assets/sword.obj"></a-asset-item>
+
+        <a-asset-item id="swordmtl" src="assets/sword.mtl"></a-asset-item>
       </a-assets>
+
       <a-obj-model
         src="#pokeball"
         mtl="#pokeballmtl"
         id="pkball1"
-        color="orange"
       ></a-obj-model>
+
+      <a-obj-model
+        src="#pokeball"
+        mtl="#pokeballmtl"
+        id="pkball2"
+        position="-3.6 0 0"
+      ></a-obj-model>
+
+      <a-obj-model
+        src="#pokeball"
+        mtl="#pokeballmtl"
+        id="pkball3"
+        position="-1.8 0 0"
+      ></a-obj-model>
+
+      <a-obj-model src="#table" mtl="#tablemtl" id="table"></a-obj-model>
+
+      <a-sky src="#sky1" radius="10" position="-1.5 0 0"></a-sky>
+
+      <a-obj-model src="#wordwall" color="gray" scale="0.01 0.01 0.01" rotation="-90 0 -90" position="15 -2 20"></a-obj-model>
+
+      <a-sky src="#sky1" radius="10" position="15 0 20"></a-sky>
+
+      <a-obj-model src="#sword" mtl="#swordmtl" scale="15 15 15" position="-3.8 2 40"></a-obj-model>
+
+      <a-sky src="#sky1" radius="10" position="-3.8 0 40"></a-sky>
+
       <a-camera>
-        <a-cursor color="#000000"></a-cursor>
+        <a-cursor color="#000000" radius="3"></a-cursor>
       </a-camera>
     </a-scene>
     <script src="script.js"></script>
