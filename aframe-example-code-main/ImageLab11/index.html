@@ -48,6 +48,8 @@
         <a-asset-item id="sword" src="assets/sword.obj"></a-asset-item>
 
         <a-asset-item id="swordmtl" src="assets/sword.mtl"></a-asset-item>
+
+        <img id="bigsky" src="assets/stainedglass.jpg">
       </a-assets>
 
       <a-obj-model
@@ -74,15 +76,17 @@
 
       <a-sky src="#sky1" radius="10" position="-1.5 0 0"></a-sky>
 
-      <a-obj-model src="#wordwall" color="gray" scale="0.01 0.01 0.01" rotation="-90 0 -90" position="15 -2 20"></a-obj-model>
+      <a-obj-model src="#wordwall" color="gray" scale="0.01 0.01 0.01" rotation="-90 0 -90" position="18.5 -2 20"></a-obj-model>
 
-      <a-sky src="#sky1" radius="10" position="15 0 20"></a-sky>
+      <a-sky src="#sky1" radius="10" position="18.5 0 20"></a-sky>
 
       <a-obj-model src="#sword" mtl="#swordmtl" scale="15 15 15" position="-3.8 2 40"></a-obj-model>
 
       <a-sky src="#sky1" radius="10" position="-1.5 0 40"></a-sky>
 
-      <a-camera>
+      <a-sky src="#bigsky" radius="35" position="-1.5 0 20"></a-sky>
+
+      <a-camera position="-1.5 1 20">
         <a-cursor color="#000000" radius="3"></a-cursor>
       </a-camera>
     </a-scene>

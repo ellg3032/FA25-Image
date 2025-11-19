@@ -17,16 +17,16 @@ function charmander() {
 
 function squirtle() {
     pokeball2.setAttribute("src", "#squirtle");
-    pokeball2.setAttribute("color", "#FFA500");
+    pokeball2.setAttribute("color", "#84c9da");
     pokeball2.setAttribute("scale", ".0012 .0012 .0012");
     pokeball2.setAttribute("position", "-2 -.6 .2");
-    pokeball.removeAttribute('obj-model', 'mtl');
+    pokeball2.removeAttribute('obj-model', 'mtl');
 }
 
 function bulbasaur() {
     pokeball3.setAttribute("src", "#bulbasaur");
-    pokeball3.setAttribute("color", "#FFA500");
+    pokeball3.setAttribute("color", "#84bd91");
     pokeball3.setAttribute("scale", ".0015 .0015 .0015");
     pokeball3.setAttribute("position", "-0.2 -.6 .2");
-    pokeball.removeAttribute('obj-model', 'mtl');
+    pokeball3.removeAttribute('obj-model', 'mtl');
 }
