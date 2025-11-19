@@ -9,26 +9,24 @@ pokeball3.addEventListener("click", bulbasaur);
 function charmander() {
     pokeball.setAttribute("src", "#charmander");
     pokeball.setAttribute("color", "#FFA500");
-    //pokeball.removeAttribute("mtl");
     pokeball.setAttribute("rotation", "-90 0 0");
     pokeball.setAttribute("scale", ".03 .03 .03");
     pokeball.setAttribute("position", "-3.8 -.6 .2");
-    pokeball.setAttribute("mtl", "null");
+    pokeball.removeAttribute('obj-model', 'mtl');
 }
 
 function squirtle() {
     pokeball2.setAttribute("src", "#squirtle");
     pokeball2.setAttribute("color", "#FFA500");
-    //pokeball.removeAttribute("mtl");
     pokeball2.setAttribute("scale", ".0012 .0012 .0012");
     pokeball2.setAttribute("position", "-2 -.6 .2");
-    pokeball2.setAttribute("mtl", "null");
+    pokeball.removeAttribute('obj-model', 'mtl');
 }
 
 function bulbasaur() {
     pokeball3.setAttribute("src", "#bulbasaur");
     pokeball3.setAttribute("color", "#FFA500");
-    //pokeball.removeAttribute("mtl");
     pokeball3.setAttribute("scale", ".0015 .0015 .0015");
     pokeball3.setAttribute("position", "-0.2 -.6 .2");
+    pokeball.removeAttribute('obj-model', 'mtl');
 }
